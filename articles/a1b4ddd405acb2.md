@@ -13,10 +13,12 @@ published_at: "2024-06-01 20:35"
 ---
 
 # 目的
+
 - 自分は今までに支払いシステムを作ったことがなかった
 - 自分のお金周りのシステムのハードルを下げたかった。
 
 # 実際の画面
+
 ![](https://storage.googleapis.com/zenn-user-upload/d1adf03795fa-20240601.png)
 ![](https://storage.googleapis.com/zenn-user-upload/31c7c96f3e9b-20240601.png)
 ![](https://storage.googleapis.com/zenn-user-upload/0b746e50bf61-20240601.png)
@@ -24,26 +26,34 @@ published_at: "2024-06-01 20:35"
 ![](https://storage.googleapis.com/zenn-user-upload/94b134c0e633-20240601.png)
 ![](https://storage.googleapis.com/zenn-user-upload/2690273617f8-20240601.png)
 
-
-
-
-
 # 実際のコード
+
 https://github.com/nagisa599/webPayPayTemplate
+
 # 技術選定
+
 - Nextjs AppRouter
+
 # 事前準備
-## paypay developerの登録
+
+## paypay developer の登録
+
 https://developer.paypay.ne.jp/
-## Nextjsの必要なパッケージをインストール
-今回は、javascriptのpaypay sdkキットを利用とHTTPクライアントライブラリのaxiosを利用します。
+
+## Nextjs の必要なパッケージをインストール
+
+今回は、javascript の paypay sdk キットを利用と HTTP クライアントライブラリの axios を利用します。
+
 ```
 npm i @paypayopa/paypayopa-sdk-node axios
 ```
-## envファイルの作成
+
+## env ファイルの作成
+
 ![](https://storage.googleapis.com/zenn-user-upload/505b53d595ed-20240601.png)
 
-上のpaypay developerのdashbord画面から以下をenvファイルに記載してください。
+上の paypay developer の dashbord 画面から以下を env ファイルに記載してください。
+
 ```
 PAYPAY_API_KEY = APIキー
 PAYPAY_SECRET = シークレット
@@ -51,15 +61,20 @@ MERCHANT_ID= 加盟店ID
 ```
 
 # 実装
-## API設計
-今回は、paypay Developerにも載っている以下のシーケンスを採用しました。
+
+## API 設計
+
+今回は、paypay Developer にも載っている以下のシーケンスを採用しました。
 ![](https://storage.googleapis.com/zenn-user-upload/4bf98be466e1-20240601.png)
 
-※paypay developerを参考
+※paypay developer を参考
 
-## API実装
-### 支払いのためのurl取得のapiを作成
-/api/paypay/route.tsを作成
+## API 実装
+
+### 支払いのための url 取得の api を作成
+
+/api/paypay/route.ts を作成
+
 ```typescript
 import { NextResponse } from "next/server";
 import crypto from "crypto"; // Importing crypto for generating unique IDs
@@ -106,8 +121,11 @@ export async function POST(request: Request) {
   }
 }
 ```
-### 支払い状況確認のapiを作成
-api/checkPaymentStatus/route.tsを作成
+
+### 支払い状況確認の api を作成
+
+api/checkPaymentStatus/route.ts を作成
+
 ```typescript
 import { NextResponse } from "next/server";
 import crypto from "crypto"; // Importing crypto for generating unique IDs
@@ -153,12 +171,14 @@ export async function POST(request: Request) {
     );
   }
 }
-            
 ```
 
 ## 画面の実装
-### 金額を入力してその金額を支払うためのurlを取得して表示するpage
-page.tsxを作成
+
+### 金額を入力してその金額を支払うための url を取得して表示する page
+
+page.tsx を作成
+
 ```typescript
 "use client";
 import axios from "axios";
@@ -201,11 +221,12 @@ export default function Home() {
     </div>
   );
 }
-
 ```
 
-### 支払い状況が完了したかどうかを確認して確認ができたらcomplateと表示するpage
-[id]/page.tsxを作成
+### 支払い状況が完了したかどうかを確認して確認ができたら complate と表示する page
+
+[id]/page.tsx を作成
+
 ```typescript
 "use client";
 import axios from "axios";
@@ -258,8 +279,8 @@ const Page = ({ params }: { params: { id: number } }) => {
 };
 
 export default Page;
-
 ```
 
 # まとめ
-今回はwebに限定して行ったが、iosやandroidなどのネイティブアプリでも実装を行っていきたい
+
+今回は web に限定して行ったが、ios や android などのネイティブアプリでも実装を行っていきたい

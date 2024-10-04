@@ -2,7 +2,7 @@
 title: "prisma migrationを途中から導入した話"
 emoji: "🐡"
 type: "tech"
-topics: ["prisma", "typescript", "DB", " migration", "migration"]
+topics: ["prisma", "typescript", "DB", "マイグレーション", "migration"]
 published: true
 ---
 

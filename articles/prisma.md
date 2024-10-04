@@ -2,8 +2,8 @@
 title: "prisma migrationを途中から導入した話"
 emoji: "🐡"
 type: "tech"
-topics: []
-published: false
+topics: ["prisma", "typescript", "DB", " migration", "migration"]
+published: true
 ---
 
 ## 目的
@@ -12,7 +12,7 @@ published: false
 
 ## マイグレーションとは
 
-まるまる
+データベースのスキーマやデータ構造を新しいバージョンに更新する作業のこと。。これにより、データベースの構造や内容を安全に変更・移行することが可能です。たとえば、新しいテーブルを追加したり、既存のテーブルにカラムを追加・削除する場合などが含まれます。
 
 ## migration 導入　(ローカル環境)
 
@@ -74,13 +74,40 @@ npx prisma migration deploy
 
 ## その他
 
-migration deploy と migration dev の違い
+### migration deploy と migration dev の違い
+
+```bash
+# ------------例----------------------
+# 2024年の1月1日にmigrationを導入
+# 2024年の1月2日にmigrationを実行
+# 2024年の1月3月にmigartionを実行
+.
+└─ prisma
+   ├── migration
+   |    ├── 202401010000_init
+   |    | └── migration.sql
+   |    ├── 202401020000_add_test_colum
+   |    | └── migration.sql
+   |    ├── 202401030000_add_test2_colum
+   |    　└── migration.sql
+   └── schema.prisma
+```
+
+#### migration deploy
+
+- DB に migartion を反映していないところから migration を実行している。例として、202401010000_init のみの migration を DB に反映させた状態に migartion deploy を行うと 401020000_add_test_colum と 202401030000_add_test2_colum の migration が実行される。
 
 ```bash
 # 差分の変更
-npx prisma migration deplou
+npx prisma migration deploy
+```
 
-# 全てのmigrationを変更
+#### migration deploy
+
+- DB に migartion を最初から全て migration を実行している。例として、202401010000_init のみの migration を DB に反映させた状態に migartion dev を行うと て、202401010000_init と 401020000_add_test_colum と 202401030000_add_test2_colum の全ての migration が実行される。
+
+```bash
+# 全ての migration を変更
 npx prisma migration dev
 ```
 

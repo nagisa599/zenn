@@ -12,6 +12,8 @@ published: false
 
 ## RAG とは
 
+#### Retrieval-Augment GEneration === 検索拡張性
+
 ## システム概要
 
 ### 知識データベースとは

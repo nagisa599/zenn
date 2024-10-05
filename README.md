@@ -1,4 +1,1 @@
-# zenn-test
-# zenn-test
-# zenn-test
-# zenn-test
+# これは zenn の記事を管理しているリポジトリーです。

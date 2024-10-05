@@ -2,8 +2,8 @@
 title: "Golangで研究室のwebサイトのRAGを作ってみた~ 夏の１日自由研究 ~"
 emoji: "😊"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
-published: false
+topics: ["RAG", "Go", "openai", "AI", "chatBot"]
+published: true
 ---
 
 ## 目的
@@ -32,7 +32,9 @@ published: false
 
 ## システム概要
 
-###　概要
+### 概要
+
+![アーキテクチャ](/images/rag-study/rag-studey-artecutre.png)
 
 ### 大まかな流れ
 
@@ -79,7 +81,7 @@ published: false
 
 スクレイピングコード
 
-```go
+```go:utilss/scriping.go
 package utils
 
 import (
@@ -156,7 +158,7 @@ func FetchAndProcessMultipleURLs(urls []string) (string, error) {
 
 チャンク分割コード
 
-```go
+```go:utils/chunk.go
 package utils
 
 func ChunkText(text string, chunkSize, overlap int) []string {
@@ -178,7 +180,7 @@ func ChunkText(text string, chunkSize, overlap int) []string {
 
 検索エンジン
 
-```go
+```go:utils/embedding.go
 package utils
 
 
@@ -199,7 +201,7 @@ func ChunkText(text string, chunkSize, overlap int) []string {
 }
 ```
 
-```go
+```go:cmd/main.go
 
 package main
 
@@ -291,4 +293,4 @@ func main() {
 
 ## まとめ
 
-思ったよりも簡単に RAG を使った chatbot を作ることができた。会社内や学校内で知識データベースが溜まっている場合は、
+思ったよりも簡単に RAG を使った chatbot を作ることができた。会社内や学校内で知識データベースが溜まっている場合は、RAG を使って様々な問題解決をしてほしい。

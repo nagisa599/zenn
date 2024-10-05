@@ -10,7 +10,7 @@ published: false
 
 開発環境で開発をしている際に backend のコンテナから frontend のコンテナに接続する際に一部で以下のエラーが発生した。この原因を調べたとところ興味深い事実が判明したので共有をしたい。
 
-```env
+```env:build/.env
 DB_USER=root
 DB_PASSWORD=
 DB_HOST=host.docker.internal
@@ -20,7 +20,7 @@ ENV=development
 PORT=3001
 ```
 
-```yaml
+```yaml:build/docker-compose.yaml
 services:
   db:
     image: mysql:8.0 # imageのコンテナ名を利用、ネット上にあるimageを使う。
@@ -53,7 +53,7 @@ services:
       - 3001:3001
 ```
 
-```go
+```go:cmd/interface/handler.go
 
 func NewDatabaseHandler() *DatabaseHandler {
 	 dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?parseTime=true&loc=Local&charset=utf8",

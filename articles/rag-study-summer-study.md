@@ -293,7 +293,7 @@ func main() {
 
 ## 結果
 
-[](/images/rag-study/result.png)
+![result](/images/rag-study/result.png)
 
 ## まとめ
 

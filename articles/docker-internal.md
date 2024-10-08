@@ -81,6 +81,6 @@ grahql-backend  | [error] failed to initialize database, got error Error 1045 (2
 
 ##　　解決策
 
-環境変数の DB_HOTS を host.docker.internal から localhost に変更をする。
+環境変数の DB_HOTS を host.docker.internal から localhost に変更をする。f
 
 ## 原因

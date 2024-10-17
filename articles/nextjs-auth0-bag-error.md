@@ -49,7 +49,7 @@ export const config = {
 
 # 原因
 
-1. /api/auth/login?returnTo=/profile の api を叩くことでログイン後のページを設定できる。そのため/api/auth/login の中に returnTo の実装を書くのはおかしかった(だったら handleLogin の option パラメータに returnTo 用意しとくなよ 💢)
+1. /api/auth/login?returnTo=/profile の api を叩くことでログイン後のページを設定できる。そのため/api/auth/login の中に returnTo の実装を書くのは不自然だった(だったら handleLogin の option パラメータに returnTo 用意しとくなよ 💢)
 2. pageRouter では、有効な可能性もある。
 3. ドキュメントの approuter の仕様が明らかに少ない
 

@@ -2,7 +2,7 @@
 title: "Nextjs(appRouter)でnextjs-auth0ライブラリーを使ったログイン後の画面遷移でつこずった話"
 emoji: "💢"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
+topics: ["nextjs", "approuter", "auth0", "tips", "nextjs-auth0"]
 published: true
 ---
 

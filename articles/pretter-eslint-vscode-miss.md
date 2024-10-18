@@ -3,7 +3,7 @@ title: "vscodeでprettierとeslintを設定しているディレクトリ以外�
 emoji: "🐈"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vscode", "typescript", "javascript", "prettier", "eslint"]
-published: false
+published: true
 ---
 
 # 前提

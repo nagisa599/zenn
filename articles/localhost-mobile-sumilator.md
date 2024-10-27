@@ -45,11 +45,12 @@ app のサーバを起動
   - Local:        http://localhost:3000
 ```
 
-####　 step3
+#### step3
+
 スマホからでは localhost は使えないので vvv.xxx.yyy.zzz に変換する
 "http://vvv.xxx.yyy.zzz:3000"
 
-## simulator で表示
+## 2.simulator で表示
 
 #### step 1
 
@@ -64,7 +65,7 @@ app のサーバを起動
 
 localhost:3000 の URL でアクセス
 
-## ミラーリングで表示
+## 3.ミラーリングで表示
 
 自分のスマホで表示(実機)の場合と一緒
 

@@ -59,7 +59,7 @@ ssh-keygen -t rsa
 #　デフォルト設定では、/Users/username/.ssh/ id_rsaに作成されてしまうので
 # /Users/username/.ssh/raspberrypi/id_rasを入力して1.で作成したフォルダーのパスに選択する
 zGenerating public/private rsa key pair.
-Enter file in which to save the key (/Users/username/.ssh/id_rsa):/Users/username/.ssh/raspberrypi/id_ras
+Enter file in which to save the key (/Users/username/.ssh/id_rsa):/Users/username/.ssh/raspberrypi/id_rsa
 ```
 
 ```bash

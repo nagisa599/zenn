@@ -3,6 +3,8 @@ title: "初心者でも安心！Raspberry PiをVSCodeで簡単リモート操作
 emoji: "✨"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Raspberry Pi", "vscode", "ssh", "公開鍵", "暗号鍵"]
+publication_name: nislab
+
 published: true
 ---
 

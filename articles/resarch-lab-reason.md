@@ -4,7 +4,7 @@ emoji: "🤔"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: [lab, zenn, 研究室, クラウド, AI]
 publication_name: nislab
-published: false
+published: true
 ---
 
 # 背景

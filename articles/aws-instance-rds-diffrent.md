@@ -24,4 +24,4 @@ published: true
 
 ### IOPS（Input/Output Operations Per Second）とは?
 
-RDS の追加、更新、削除の頻度が多いほど、高いほどがいい(リアルタイムで監視する場合など
+RDS の追加、更新、削除の頻度が多いほど、高いほどがいい(リアルタイムで監視する場合など)

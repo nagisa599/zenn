@@ -3,8 +3,13 @@ title: "Golangで研究室のwebサイトのRAGを作ってみた~ 夏の１日�
 emoji: "😊"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["RAG", "Go", "openai", "AI", "chatBot"]
+publication_name: nislab
 published: true
 ---
+
+## 私たちの研究室
+
+https://nisk.doshisha.ac.jp/
 
 ## 目的
 

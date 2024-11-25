@@ -2,7 +2,7 @@
 title: "RDSのストレージタイプとインスタンスタイプの違い"
 emoji: "🐈"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["RDS","AWS"."mysql","postgress"]
+topics: ["RDS", "AWS", "mysql", "postgress"]
 published: true
 ---
 

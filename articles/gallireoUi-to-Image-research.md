@@ -2,7 +2,7 @@
 title: "Galileo AIでfigmaのテンプレートを一撃で作る"
 emoji: "🔫"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
+topics: ["figma", "Galileo AI", "AI", "デザイン"]
 publication_name: nislab
 published: false
 ---

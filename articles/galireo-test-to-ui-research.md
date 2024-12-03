@@ -44,7 +44,7 @@ https://nislab-advent-calendar-2024-12.vercel.app
 
 - #### 他の人のデザインを使える(Explorer)
   - デザインだけでなく、プロンプトも見れる
-    (他の人のプロンプト共有昨日は個人的に嬉しい ☺️)
+    (他の人のプロンプト共有機能は個人的に嬉しい ☺️)
     ![](/images/galileo/image1.png)
 
 ## どんな時におすすめか

@@ -7,13 +7,13 @@ publication_name: nislab
 published: false
 ---
 
-## 私たちの研究室(クラウドや AI などを研究)
+## 私たちの研究室(Nislab)
 
 https://nisk.doshisha.ac.jp/
 
 ## アドベントカレンダー 3 日目~
 
-https://advent-calendar-mock.vercel.app/
+https://nislab-advent-calendar-2024-12.vercel.app
 
 ## Galileo AI を一言で
 

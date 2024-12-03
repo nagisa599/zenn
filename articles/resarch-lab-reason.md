@@ -9,7 +9,7 @@ published: true
 
 # 背景
 
-## 私たちの研究室(クラウドや AI などを研究)
+## 私たちの研究室(Nislab)
 
 https://nisk.doshisha.ac.jp/
 

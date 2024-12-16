@@ -3,7 +3,7 @@ title: "なぜ研究室で起業をしたのか"
 emoji: "💨"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["起業", "AI", "エンジニア", "副業", "最強"]
-publication: manamu
+publication_name: "manamu"
 published: false
 ---
 

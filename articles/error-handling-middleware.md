@@ -45,7 +45,7 @@ https://echo.labstack.com/docs/error-handling
 
 カスタムエラーを実装しており、指定したエラー以外の場合は、500 の Exception エラーを返すようにしています。
 
-```golang
+```go
 func CustomHTTPErrorHandler(err error, c echo.Context) {
 	if me, ok := err.(*Error.CustomerError); ok {
 		// カスタムエラーの場合

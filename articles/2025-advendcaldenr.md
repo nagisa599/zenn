@@ -1,6 +1,6 @@
 ---
 title: "今年もやります、NISLab Advent Calendar 2025"
-emoji: "🤔"
+emoji: "🎄"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: [lab, zenn, 研究室, クラウド, AI]
 publication_name: nislab

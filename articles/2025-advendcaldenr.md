@@ -14,6 +14,8 @@ published: false
 2024 年の Advent Calendar は多くの方に読んでいただき、**研究室選びの参考になった**という声もありました！！  
 今年も研究室の取り組みやメンバーの知見を広く発信し、研究室の雰囲気や魅力をより多くの人に届けたいと考えています。
 
+https://nislab-advendcallender-2025.vercel.app/
+
 ## 私たちの研究室(Nislab)
 
 https://nisk.doshisha.ac.jp/

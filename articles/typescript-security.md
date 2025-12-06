@@ -7,6 +7,14 @@ publication_name: nislab
 published: true
 ---
 
+# 私たちの研究室(NISLab)
+
+https://nisk.doshisha.ac.jp/
+
+# アドベントカレンダー 5 日目~
+
+https://nislab-advendcallender-2025.vercel.app/
+
 # 背景
 
 Node.js プロジェクト（React / Next.js / NestJS など）は、依存パッケージが多く更新も頻繁なため、脆弱性が混入しやすいという弱点があります。また、最近はサプライチェーン攻撃が増えており、自分のコード以外の部分からリスクが発生することも珍しくありません。

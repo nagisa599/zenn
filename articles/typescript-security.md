@@ -83,7 +83,7 @@ Snyk や Trivy を CI に組み込むことで、
 
 ## 参考
 
-自分が使っている action の例を一部伐採して載せさせていただきます
+自分が使っている github action の例を一部載せさせていただきます.
 
 ```bash
 name: Security CI
